@@ -1,0 +1,2 @@
+# The Local Library Website
+This is an Express Tutorial that was followed as part of the curriculum on [The Odin Project](https://theodinproject.com/courses/nodejs/lessons/express-101). The The tutorial can be found on MDN web Docs: [Express Tutorial](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Tutorial_local_library_website)

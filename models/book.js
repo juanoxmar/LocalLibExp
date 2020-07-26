@@ -9,6 +9,8 @@ const BookShema = new Schema({
   genre: [{ type: Schema.Types.ObjectId, ref: 'Genre' }],
 });
 
-BookShema.virtual('url').get(() => `/catalog/book/${this._id}`);
+BookShema.virtual('url').get(function () {
+  return `/catalog/book/${this._id}`;
+});
 
 module.exports = mongoose.model('Book', BookShema);

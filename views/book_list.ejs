@@ -1,0 +1,14 @@
+<%- include('header'); -%>
+
+<h1><%= title %></h1>
+<ul>
+  <% book_list.sort((a, b) => { let textA = a.title.toUpperCase(); let textB =
+  b.title.toUpperCase(); return (textA < textB) ? -1 : (textA > textB) ? 1 :
+  0;}).forEach(book => { %>
+  <li>
+    <a href="<%= book.url %>"><%= book.title %></a> | (<%= book.author.name %>)
+  </li>
+  <% }) %>
+</ul>
+
+<%- include('footer'); -%>
